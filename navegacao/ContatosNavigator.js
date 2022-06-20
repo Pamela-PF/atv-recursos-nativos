@@ -18,11 +18,9 @@ const container = (
             name="ListaDeContatos" 
             component={ListaDeContatos}
             options={(props) => ({
-                headerRight: () => <HeaderButton
-                HeaderButtonComponent={BotaoCabecalho}>
+                headerRight: () => <HeaderButton HeaderButtonComponent={BotaoCabecalho}>
                     <Item
                         title="Adicionar"
-                        iconName='md-add'
                         onPress={()=>{
                             console.log("Chamou")
                             props.navigation.navigate('NovoContato')
